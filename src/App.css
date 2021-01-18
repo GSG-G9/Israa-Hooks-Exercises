@@ -31,7 +31,13 @@ button{
 .color-div{
   min-height: 80vh;
 }
-
+.sign-form{
+  width:50vw;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
@@ -77,7 +83,19 @@ button{
   flex-direction: column;
   flex-wrap: nowrap;
 }
-
+.error-div{
+  color: red;
+}
+.color-button{
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  
+  color: #000;
+  text-transform: capitalize;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -13,10 +13,10 @@ const handleReset=()=>{
 }
 return(
     <div>
-    <p>{counter}</p>
-   <button onClick={()=>handleIncrement()}>+ Add</button>
-   <button onClick={()=>handleDecrement()}>- Sub</button>
-   <button onClick={()=>handleReset()}>reset</button>
+    <h1>{counter}</h1>
+   <button className="todo-button" onClick={()=>handleIncrement()}>+ Add</button>
+   <button  className="todo-button" onClick={()=>handleDecrement()}>- Sub</button>
+   <button className="todo-button" onClick={()=>handleReset()}>reset</button>
     </div>
 
 )
