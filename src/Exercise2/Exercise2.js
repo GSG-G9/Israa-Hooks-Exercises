@@ -1,43 +1,8 @@
 import React,{useState} from 'react'
 
-let colorArray = ["AliceBlue",
-"AntiqueWhite",
-"Aqua",
-"Aquamarine",
-"Azure",
-"Beige",
-"Bisque",
-"Black",
-"BlanchedAlmond",
-"Blue",
-"BlueViolet",
-"Brown",
-"BurlyWood",
-"CadetBlue",
-"Chartreuse",
-"Chocolate",
-"Coral",
-"CornflowerBlue",
-"Cornsilk",
-"Crimson",
-"Cyan",
-"DarkBlue",
-"DarkCyan",
-"DarkGoldenRod",
-"DarkGray",
-"DarkGrey",
-"DarkGreen",
-"DarkKhaki",
-"DarkMagenta",
-"DarkOliveGreen",
-"DarkOrange",
-"DarkOrchid",
-"DarkRed",
-"DarkSalmon",
-"DarkSeaGreen",
-"DarkSlateBlue",
-"DarkSlateGray",
-"DarkSlateGrey"];
+let colorArray = ["White","Yellow","Fuchsia","Red","Silver","Olive","Purple",
+"Maroon","Aqua","Lime","Blue","Green","Black"
+];
 
 function Exercise2(){
     const [color,setColor]=useState("#FFFFFF")
@@ -46,7 +11,7 @@ function Exercise2(){
     }
     return(
        <div className="color-div" style={{backgroundColor: color}}>
-          { colorArray.map((item) => <button onClick={()=>handleColor(item)}>Color {item}</button> )}
+          { colorArray.map((item) => <button className="color-button" onClick={()=>handleColor(item)}>{item}</button> )}
        </div>
     )
     }
